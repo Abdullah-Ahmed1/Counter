@@ -5,4 +5,4 @@ const changeNumber = (state = 0, action)=>{
         default: return state;
     }
 }
-export default changeNumber
+export default changeNumber 
