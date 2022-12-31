@@ -1,22 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
-import store from './store'
-
-function App() {
-  const [count, setCount] = useState(0)
-  store.dispatch({
-      type:"bugAdded",
-      payload  :{
-        description: "bug1"
-      }
-  })
-  console.log(store.getState())
-  return (
-    <div className="App">
-        hello world
+const App = ()=>{
+  return(
+    <div className='container'>
+        <h4>Counter</h4>
+        <div className='quantity'>
+          <a  className='quantity_minus' title='descrement'><span>-</span></a>
+          <input type="text" className='quantity_input' />
+          <a  title='increment'><span>+</span></a>
+        </div>
     </div>
   )
 }
-
 export default App
